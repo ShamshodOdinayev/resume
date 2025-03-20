@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA; /* Och kulrang fon */
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1A2A44; /* Qoramtir ko'k */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FFD700 !important; /* Oltin sariq */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #FFFFFF !important;
+}
+
+/* Header Section */
+.header-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #1A2A44 0%, #2A3B5A 100%); /* Qoramtir ko'k gradient */
+    position: relative;
+    overflow: hidden;
+}
+
+.header-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+    opacity: 0.1;
+}
+
+.profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #FFD700; /* Oltin sariq ramka */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 35px rgba(255, 215, 0, 0.5); /* Oltin sariq soya */
+}
+
+.header-section h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Custom Button (Bootstrap btn-dark ishlatiladi) */
+.btn-dark {
+    background-color: #1A2A44; /* Qoramtir ko'k */
+    border: 2px solid #FFD700; /* Oltin sariq ramka */
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4); /* Oltin sariq soya */
+    background-color: #FFD700; /* Oltin sariq fon */
+    color: #1A2A44;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+    color: #1A2A44; /* Qoramtir ko'k */
+    font-weight: 700;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #FFD700; /* Oltin sariq chiziq */
+}
+
+/* About Section */
+#about {
+    background-color: #F8F9FA; /* Och kulrang fon */
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Education Section */
+.bg-light {
+    background-color: #FFFFFF !important; /* Oq fon */
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #1A2A44;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #6C757D;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #1A2A44; /* Qoramtir ko'k fon */
+    color: #FFFFFF;
+}
+
+#contact h2 {
+    color: #FFFFFF;
+}
+
+#contact h2::after {
+    background: #FFD700; /* Oltin sariq chiziq */
+}
+
+#contact ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#contact i {
+    color: #FFD700; /* Oltin sariq ikonlar */
+    font-size: 1.3rem;
+}
+
+#contact a {
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #FFD700; /* Oltin sariq */
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #1A2A44; /* Qoramtir ko'k fon */
+    color: #FFFFFF;
+    font-size: 1rem;
+}
