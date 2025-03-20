@@ -7,6 +7,33 @@ body {
     color: #333;
 }
 
+/* Name Font (Ism Familiya uchun maxsus font) */
+.name-font {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.2rem; /* Navbar va header'da kattaroq */
+    letter-spacing: 1.5px; /* Harflar orasidagi masofa */
+    text-transform: capitalize; /* Har bir so'zning birinchi harfi katta */
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.name-font:hover {
+    color: #FFD700; /* Oltin sariq hover effekti */
+}
+
+/* Navbar'dagi ism familiya uchun maxsus sozlamalar */
+.navbar-brand.name-font {
+    font-size: 1.8rem; /* Navbar'da biroz kichikroq */
+}
+
+/* Footer'dagi ism familiya uchun maxsus sozlamalar */
+footer .name-font {
+    font-size: 1.2rem; /* Footer'da kichikroq */
+}
+
 /* Navbar */
 .navbar {
     background-color: #1A2A44; /* Qoramtir ko'k */
@@ -25,7 +52,6 @@ body {
 
 .navbar-brand {
     font-weight: 700;
-    font-size: 1.5rem;
     color: #FFFFFF !important;
 }
 
