@@ -14,8 +14,8 @@ public class HomeController {
     public String home(Model model) {
         // Shaxsiy ma'lumotlar
         model.addAttribute("name", "Odinayev Shamshod");
-        model.addAttribute("title", "Student");
-        model.addAttribute("aboutMe", "I know the Java programming language, but I haven't gotten a job yet.");
+        model.addAttribute("title", "");
+        model.addAttribute("aboutMe", "I am a Java developer, mostly working on my own projects to improve my skills. Additionally, I am learning English.");
 
         // Ta'lim
         List<Education> education = Arrays.asList(
